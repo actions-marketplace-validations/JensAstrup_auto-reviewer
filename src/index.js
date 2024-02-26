@@ -2,9 +2,6 @@ import {Octokit} from '@octokit/rest'
 import OpenAI from 'openai'
 import {execSync} from 'child_process'
 
-
-console.log('Running review script...')
-console.log(process.env)
 const client = new OpenAI({apiKey: process.env.INPUT_OPENAI_API_KEY})
 const githubToken = process.env.GITHUB_TOKEN
 const octokit = new Octokit({auth: githubToken})
