@@ -53,11 +53,6 @@ class PullRequestReviewer {
 }
 
 
-async function saveOutputToFile(output) {
-  await fs.writeFile('./output.txt', output, 'utf8')
-}
-
-
 async function run() {
   try {
     // Fetch the base branch
