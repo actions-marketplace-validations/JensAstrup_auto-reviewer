@@ -1,7 +1,10 @@
 name: Auto Reviewer
 
 on:
-  workflow_call: {}
+  workflow_call:
+    secrets: 
+      OPENAI_API_KEY: 
+        required: true
 
 jobs:
   review-pr:
@@ -31,7 +34,7 @@ jobs:
       - name: Run script and capture output
         id: run_script
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_TOKEN }}
+          OPENAI_API_KEY: ${{ inputs.OPENAI_API_KEY }}
         run: |
           node ./reviewer/review.js
 
