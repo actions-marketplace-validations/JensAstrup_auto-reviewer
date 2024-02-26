@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@octokit/rest": "^20.0.2",
+    "openai": "^4.28.0"
+  }
+}

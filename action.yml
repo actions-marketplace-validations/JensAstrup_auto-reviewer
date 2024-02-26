@@ -1,0 +1,5 @@
+name: Auto Reviewer
+description: Automatically review pull requests using OpenAI's GPT
+runs:
+  using: node20
+  main: 'src/reviewer.js'
