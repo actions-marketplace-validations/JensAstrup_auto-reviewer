@@ -3,6 +3,11 @@ description: Automatically review pull requests using OpenAI's GPT
 branding:
     icon: git-pull-request
     color: gray-dark
+inputs:
+    OPENAI_API_KEY:
+        description: 'API key for OpenAI'
+        required: true
+        default: ${{ secrets.OPENAI_API_KEY }}
 runs:
   using: node20
   main: 'src/reviewer.js'
