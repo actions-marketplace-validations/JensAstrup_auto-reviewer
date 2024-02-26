@@ -1,5 +1,4 @@
 import {Octokit} from '@octokit/rest'
-import {promises as fs} from 'fs'
 import OpenAI from 'openai'
 import {execSync} from 'child_process'
 
