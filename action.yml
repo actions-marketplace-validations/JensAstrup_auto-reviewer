@@ -7,7 +7,6 @@ inputs:
     OPENAI_API_KEY:
         description: 'API key for OpenAI'
         required: true
-        default: ${{ secrets.OPENAI_API_KEY }}
 runs:
   using: node20
   main: 'src/reviewer.js'
