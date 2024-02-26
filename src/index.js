@@ -3,7 +3,7 @@ import OpenAI from 'openai'
 import {execSync} from 'child_process'
 
 
-const client = new OpenAI({apiKey: process.env.OPENAI_API_KEY})
+const client = new OpenAI({apiKey: process.env.INPUT_OPENAI_API_KEY})
 const githubToken = process.env.GITHUB_TOKEN
 const octokit = new Octokit({auth: githubToken})
 

@@ -17,7 +17,7 @@ __nccwpck_require__.r(__webpack_exports__);
 
 
 
-const client = new openai__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .ZP({apiKey: process.env.OPENAI_API_KEY})
+const client = new openai__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .ZP({apiKey: process.env.INPUT_OPENAI_API_KEY})
 const githubToken = process.env.GITHUB_TOKEN
 const octokit = new _octokit_rest__WEBPACK_IMPORTED_MODULE_2__.Octokit({auth: githubToken})
 
